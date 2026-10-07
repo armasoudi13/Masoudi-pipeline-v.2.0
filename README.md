@@ -15,6 +15,22 @@
           ~ P I P E L I N E ~   v1.0.0
 ```
 
+Masoudi Pipeline v.2.0
+
+A single-script, reference-based pipeline for Oxford Nanopore sequencing data, developed at the Masoudi Lab, Virology Department, SPH-TUMS.
+
+Input: one or many FASTQ(.gz) files (or barcode folders) and a custom reference FASTA.
+
+Steps:
+
+QC and trimming: FastQC → Trim Galore → FastQC → MultiQC
+Mapping: minimap2 or BWA-MEM2 → filtered, sorted BAM + index, flagstat
+Duplicate removal and variant calling: samtools markdup → LoFreq and bcftools mpileup
+Consensus: bcftools consensus, with low-depth positions masked as N
+
+Output: filtered VCFs, consensus FASTA, QC summary (TSV + MultiQC), and plots (QC, depth plot, coverage heatmaps, variant plots).
+
+
 # masoudi-pipeline
 
 A single-file Python pipeline for **Oxford Nanopore (ONT)** reference-based analysis.
