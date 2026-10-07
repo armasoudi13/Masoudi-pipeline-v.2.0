@@ -1,0 +1,19 @@
+name: masoudi-pipeline
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python>=3.9
+  - numpy
+  - matplotlib
+  - fastqc
+  - trim-galore
+  - cutadapt
+  - multiqc
+  - minimap2
+  - bwa-mem2
+  - samtools>=1.17
+  - bcftools>=1.17
+  - htslib
+  - lofreq
