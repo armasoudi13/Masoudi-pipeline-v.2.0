@@ -12,12 +12,12 @@
 | |\/| |  / _ \  \___ \ | | | || | | || | | | | |
 | |  | | / ___ \  ___) || |_| || |_| || |_| | | |
 |_|  |_|/_/   \_\|____/  \___/  \___/ |____/ |___|
-          ~ P I P E L I N E ~   v1.0.0
+          ~ P I P E L I N E ~   v2.0.0
 ```
 
 Masoudi Pipeline v.2.0
 
-A single-script, reference-based pipeline for Oxford Nanopore sequencing data, developed at the Masoudi Lab, Virology Department, SPH-TUMS.
+A single-script, reference-based pipeline for Oxford Nanopore sequencing data, developed at Polio Lab, Virology Department, SPH-TUMS.
 
 Input: one or many FASTQ(.gz) files (or barcode folders) and a custom reference FASTA.
 
